@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+<style>
+
+@font-face {
+   font-family: 'magical-mystery-tour';
+   src: url(magical-mystery-tour.ttf);
+}
+
+body {
+  background-color: #68b3de;
+  color: black;
+  font-family: magical-mystery-tour;
+} 
+
+a:link {
+  text-decoration: none;
+  color: darkslateblue ;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white ;
+}
+
+a:visted {
+  text-decoration: none;
+  color: midnightblue ;
+}
+
+    .row{
+      width: 400px;
+      height: 700px;
+      border-radius: 200px;
+      border: 10px solid #cfc07a;
+      padding: 20px;
+      margin: 100px auto;
+      box-shadow: 0px 0px 20px 4px #5c91d1;
+      background-color: #e2e18f;
+      text-align: center;
+    }
+    
+    .button1 {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background-color: #98e7a9;
+        border: 10px solid #376d42 ;
+        color: #569860;
+        font-family: magical-mystery-tour;
+        padding: 8px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 80px;
+        box-shadow: 0 20px #65a574;
+    }
+    
+    .button1:hover {background-color:#86d998}
+    
+    .button1:active {
+      background-color: #78cc8a;
+      box-shadow: 0 4px #579666;
+      transform: translateY(13px);
+    }
+    
+    .button2 {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background-color: #be3066;
+        border: 10px solid #5c1923 ;
+        color: #702248;
+        font-family: magical-mystery-tour;
+        padding: 8px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 80px;
+        box-shadow: 0 20px #8e355a;
+    }
+    
+    .button2:hover {background-color:#b3295d}
+    
+    .button2:active {
+      background-color: #9e1c4e;
+      box-shadow: 0 4px #702544;
+      transform: translateY(13px);
+    }
+</style>
+  <body>
+      <center>
+        <div class="row">
+        <audio id="sound1" src="audio-yes.mp3" preload="auto"></audio>
+        <audio id="sound2" src="audio-no2.mp3" preload="auto"></audio>
+        
+        <br><br><br><br><button class="button1" onclick="document.getElementById('sound1').play();">Y</button>
+        
+        <br><br><br><br><br><br><button class="button2" onclick="document.getElementById('sound2').play();">N</button></div></center>
+        
+<!-- commenting out for now due to nature of the site - unsure if i want any random traffic to return to my personal site. < a href="https://joriel.neocities.org/" target="_blank">★</ a> /right -->
+  </body>
+</html>
+
